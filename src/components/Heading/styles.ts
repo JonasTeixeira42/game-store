@@ -4,6 +4,22 @@ import media from 'styled-media-query';
 import { HeadingProps, LineColors } from '.';
 
 const wrapperModifiers = {
+  small: () => css`
+    font-size: 1.6rem;
+
+    &::after {
+      width: 3rem;
+    }
+  `,
+
+  medium: () => css`
+    font-size: 2.4rem;
+
+    ${media.greaterThan('medium')`
+      font-size: 2.8rem;
+    `}
+  `,
+
   lineLeft: (color: LineColors) => css`
     padding-left: 0.8rem;
     border-left: 0.7rem solid ${color};
@@ -25,15 +41,11 @@ const wrapperModifiers = {
 };
 
 export const Wrapper = styled.h2<HeadingProps>`
-  ${({ color, lineLeft, lineColor, lineBottom }) => css`
+  ${({ color, lineLeft, lineColor, lineBottom, size }) => css`
     color: ${color};
-    font-size: 2.4rem;
-
-    ${media.greaterThan('medium')`
-      font-size: 2.8rem;
-    `}
 
     ${lineLeft && wrapperModifiers.lineLeft(lineColor!)}
     ${lineBottom && wrapperModifiers.lineBottom(lineColor!)}
+    ${!!size && wrapperModifiers[size]()}
   `}
 `;

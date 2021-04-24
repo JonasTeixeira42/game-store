@@ -13,10 +13,10 @@ export const Wrapper = styled.div<LogoProps>`
     css`
       ${media.lessThan('medium')`
         width: 5.8rem;
-        height: 7rem;
+        height: 4.5rem;
 
         svg {
-          height: 7rem;
+          height: 4.5rem;
           pointer-event: none;
         }
 
