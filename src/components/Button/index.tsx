@@ -4,7 +4,7 @@ import * as S from './styles';
 
 export type ButtonProps = {
   children?: React.ReactNode;
-  size?: 'normal' | 'large';
+  size?: 'normal' | 'medium' | 'large';
   fullWidth?: boolean;
   icon?: JSX.Element;
   onClick?: () => (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -12,7 +12,7 @@ export type ButtonProps = {
 
 const Button = ({
   children,
-  size = 'normal',
+  size = 'medium',
   icon,
   fullWidth = false,
   ...props
