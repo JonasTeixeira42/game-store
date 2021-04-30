@@ -1,6 +1,18 @@
-import { createGlobalStyle } from 'styled-components';
+import {
+  createGlobalStyle,
+  css,
+  DefaultTheme,
+  GlobalStyleComponent,
+} from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+type GlobalStylesProps = {
+  removeBg?: boolean;
+};
+
+const GlobalStyles: GlobalStyleComponent<
+  GlobalStylesProps,
+  DefaultTheme
+> = createGlobalStyle`
   @font-face {
     font-family: 'Poppins';
     font-style: normal;
@@ -41,12 +53,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html, body, #root {
-    height: 100%auto;
+    height: 100%;
   }
 
   body {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    ${({ removeBg }) => css`
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+      font-size: 1.6rem;
+
+      ${!removeBg &&
+      css`
+        background-color: #272727;
+      `}
+    `}
   }
 `;
 
