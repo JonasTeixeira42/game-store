@@ -43,7 +43,7 @@ export const SectionBanner = styled.section`
 `;
 
 export const SectionNews = styled(Sections)`
-  ${({ theme }) => css`
+  ${() => css`
     margin-bottom: 11.2rem;
 
     ${media.greaterThan('large')`

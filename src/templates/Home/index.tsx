@@ -68,7 +68,7 @@ const Home = ({
 
       <S.SectionUpcoming>
         <Container>
-          <Heading lineLeft lineColor="#3CD3C1" color="#272727">
+          <Heading lineLeft lineColor="#3CD3C1" color="#FAFAFA">
             Upcoming
           </Heading>
 
