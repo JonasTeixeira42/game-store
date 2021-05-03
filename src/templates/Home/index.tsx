@@ -68,13 +68,13 @@ const Home = ({
 
       <S.SectionUpcoming>
         <Container>
-          <Heading lineLeft lineColor="#3CD3C1" color="#FAFAFA">
+          <Heading lineLeft lineColor="#3CD3C1" color="#272727">
             Upcoming
           </Heading>
 
-          <GameCardSlider items={upcomingGames} color="#FAFAFA" />
+          <GameCardSlider items={upcomingGames} color="#272727" />
           <Highlight {...upcomingHighlight} />
-          <GameCardSlider items={upcomingMoreGames} color="#FAFAFA" />
+          <GameCardSlider items={upcomingMoreGames} color="#272727" />
         </Container>
       </S.SectionUpcoming>
 

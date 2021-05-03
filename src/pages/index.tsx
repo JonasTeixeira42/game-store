@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Home, { HomeTemplateProps } from 'templates/Home';
+import Home from 'templates/Home';
 import bannersMock from 'components/BannerSlider/mock';
 import gamesMock from 'components/GameCardSlider/mock';
 import highlightMock from 'components/Highlight/mock';

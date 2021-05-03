@@ -62,11 +62,6 @@ export const Subtitle = styled.h3`
   font-weight: 400;
   margin-bottom: 1.6rem;
 
-  strong {
-    color: #f231a5;
-    font-weight: 600;
-  }
-
   ${media.greaterThan('medium')`
     font-size: 1.8rem;
   `}

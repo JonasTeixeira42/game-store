@@ -77,7 +77,7 @@ export const SectionUpcoming = styled(Sections)`
 export const SectionFreeGames = styled(Sections)``;
 
 export const SectionFooter = styled.section`
-  ${({ theme }) => css`
+  ${() => css`
     margin-top: 3.2rem;
     padding-bottom: 1.6rem;
     padding-top: 5.6rem;

@@ -33,6 +33,7 @@ export const Wrapper = styled.section<WrapperProps>`
 
       .slick-list {
         margin: 0 -1.6rem;
+        padding-bottom: 1.6rem;
       }
     `}
 

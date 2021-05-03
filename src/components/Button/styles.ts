@@ -45,12 +45,17 @@ const wrapperModifiers = {
 
 export const Wrapper = styled.button<WrapperProps>`
   ${({ size, hasIcon, fullWidth }) => css`
-    background: linear-gradient(180deg, #ff5f5f 0%, #f062c0 50%);
+    background: #f80759;
     color: #fafafa;
     border: 0;
     border-radius: 0.4rem;
     padding: 0.8rem;
     cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #ad043e;
+    }
 
     ${!!size && wrapperModifiers[size]}
     ${hasIcon && wrapperModifiers.withIcon}

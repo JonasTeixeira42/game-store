@@ -65,7 +65,7 @@ const GlobalStyles: GlobalStyleComponent<
 
       ${!removeBg &&
       css`
-        background-color: #272727;
+        background: #272042;
       `}
     `}
   }

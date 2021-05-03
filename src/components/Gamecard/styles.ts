@@ -3,14 +3,21 @@ import styled, { css } from 'styled-components';
 export const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
+  padding: 1.6rem 1.6rem 0;
   width: 100%;
   height: 100%;
   background-color: #fafafa;
+  border-radius: 4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 `;
 
 export const ImageBox = styled.div`
-  height: 14rem;
+  height: 23rem;
   width: 100%;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+
+  overflow: hidden;
   background: #f6f7f8;
   background-image: linear-gradient(
     to right,
@@ -20,7 +27,6 @@ export const ImageBox = styled.div`
     #f6f7f8 100%
   );
   background-size: 80rem 14rem;
-  animation: placeholderShimmer 1s linear infinite forwards;
 
   img {
     width: 100%;
@@ -45,8 +51,7 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    height: 100%;
-    margin: 1.6rem;
+    margin: 1.6rem 0;
   `}
 `;
 
@@ -59,14 +64,14 @@ export const Title = styled.h3`
     font-size: 1.6rem;
     line-height: 1.6rem;
     font-weight: 600;
-    color: #272727;
+    color: #143254;
   `}
 `;
 
 export const Developer = styled.h3`
   ${() => css`
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #8f8f8f;
   `}
 `;
@@ -110,6 +115,7 @@ const priceModifiers = {
     color: #8f8f8f;
     text-decoration: line-through;
     margin-right: 1.6rem;
+    font-weight: 400;
   `,
 };
 

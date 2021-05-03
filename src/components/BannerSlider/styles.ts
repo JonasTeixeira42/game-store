@@ -15,7 +15,8 @@ export const Wrapper = styled.section`
         background: #fafafa;
         width: 1.2rem;
         height: 1.2rem;
-        border-radius: 50%;
+        /* border-radius: 50%; */
+        transform: rotate(45deg);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,7 +24,7 @@ export const Wrapper = styled.section`
         cursor: pointer;
 
         &.slick-active {
-          background: #f231a5;
+          background: #31beaf;
         }
       }
 

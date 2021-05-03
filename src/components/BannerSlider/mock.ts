@@ -1,24 +1,31 @@
+import crashImage from 'assets/images/crash.png';
+import biomutantImage from 'assets/images/biomutant.jpg';
+import residentImage from 'assets/images/resident.jpg';
+import cyberpunkImage from 'assets/images/cyberpunk.jpg';
+
 export default [
   {
-    img: 'https://source.unsplash.com/user/willianjusten/1042x580',
-    title: 'Defy death 1',
-    subtitle: '<p>Play the new <strong>CrashLands</strong> season',
-    buttonLabel: 'Buy now',
-    buttonLink: '/games/defy-death',
-    ribbon: 'Bestselling',
+    img: biomutantImage,
+    title: 'Biomutant',
+    subtitle: 'Play a new open-world, post-apocalyptic Kung-Fu fable RPG',
+    buttonLabel: 'Pre-Purchase now',
   },
   {
-    img: 'https://source.unsplash.com/user/willianjusten/1042x582',
-    title: 'Defy death 2',
-    subtitle: '<p>Play the new <strong>CrashLands</strong> season',
+    img: crashImage,
+    title: 'Crash Bandicoot',
+    subtitle: 'Play the new Crash Bandicoot game',
     buttonLabel: 'Buy now',
-    buttonLink: '/games/defy-death',
   },
   {
-    img: 'https://source.unsplash.com/user/willianjusten/1042x581',
-    title: 'Defy death 3',
-    subtitle: '<p>Play the new <strong>CrashLands</strong> season',
+    img: residentImage,
+    title: 'Resident Evil Village',
+    subtitle: 'Experience survival horror like never before',
+    buttonLabel: 'Pre-Purchase now',
+  },
+  {
+    img: cyberpunkImage,
+    title: 'Cyberpunk 2077',
+    subtitle: 'Enter the massive open world of Night City',
     buttonLabel: 'Buy now',
-    buttonLink: '/games/defy-death',
   },
 ];

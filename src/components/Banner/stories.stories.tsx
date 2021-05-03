@@ -9,7 +9,7 @@ export default {
   args: {
     img: 'https://source.unsplash.com/random/1042x580',
     title: 'Defy death',
-    subtitle: '<p>Play the new <strong>Crashlands</strong> season</p>',
+    subtitle: 'Play the new Crashlands season',
     buttonLabel: 'Buy now',
   },
 } as Meta;
